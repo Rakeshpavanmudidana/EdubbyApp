@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - EduBuddy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      cursor: default;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+    nav span {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    nav span.active {
+      border-bottom: 2px solid #ff69b4;
+    }
+    /* nav a:hover {
+      text-decoration: underline;
+    } */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff8cdd;
+    }
+    .contact-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact-section h1 {
+      font-size: 36px;
+      color: #007fff;
+    }
+    .contact-section p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EduBuddy</div>
+    <nav>
+      <span  id="home" >Home</span>
+      <span id="about" >About</span>
+      <span id="contact" class="active">Contact</span>
+    </nav>
+  </header>
+
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+    <p>
+      Got questions or feedback? We'd love to hear from you! <br />
+      📧 Email us at: <strong>support@edubuddy.com</strong> <br />
+      📞 Call: +91 7013696323
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 EduBuddy. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

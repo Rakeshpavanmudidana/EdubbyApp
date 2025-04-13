@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About EduBuddy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      cursor: default;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #00eaff;;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 15px 20px;
+      background:  rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(6, 218, 218, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      margin: 20px auto;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      max-width: 850px;
+      animation: fadeSlide 1s ease-in-out;
+    }
+
+    .content p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+
+    .team-title {
+      font-size: 2.5em;
+      color: #00eaff;
+      margin: 40px 0 20px;
+      animation: fadeSlide 1s ease-in-out;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-card {
+      border-radius: 20px;
+      width: 260px;
+      padding: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      opacity: 0;
+      transform: translateY(50px);
+      background:  rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(6, 218, 218, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .team-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .team-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(126, 87, 194, 0.4);
+    }
+
+    .team-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #7e57c2;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover img {
+      transform: rotate(2deg) scale(1.05);
+    }
+
+    .team-card h2 {
+      color: #ba68c8;;
+      margin-bottom: 5px;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      color: #e0e0e0;
+      margin: 4px 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: #6a1b9a;
+      color: #fff;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .team-card {
+        width: 90%;
+      }
+
+      h1, .team-title {
+        font-size: 2em;
+      }
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 50px;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 8px 32px rgba(6,218,218,0.1);
+    }
+
+    nav span {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      
+    }
+
+    nav span.active {
+      border-bottom: 2px solid #ff69b4;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff8cdd;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EduBuddy</div>
+    <nav>
+      <span id="home">Home</span>
+      <span id="about" class="active">About</span>
+      <span id="contact">Contact</span>
+    </nav>
+  </header>
+
+  <!-- EduBuddy Description -->
+  <div class="content">
+    <h1>About EduBuddy</h1>
+    <p>
+      EduBuddy is an innovative platform designed to help students and teachers stay connected and organized. 
+      With features like AI-generated notes, smart revision tracking, real-time topic updates, and teacher-friendly tools, 
+      EduBuddy makes learning smoother and smarter.
+    </p>
+  </div>
+
+  <!-- Meet Our Team Section -->
+  <h2 class="team-title">Meet Our Team</h2>
+  <div class="team-container">
+    <!-- Pavani -->
+    <div class="team-card">
+      <img src="C:\Users\parla\OneDrive\Desktop\edubuddy\pavani.jpg" alt="Pavani" style="height: 190;">
+      <h2>Pavani</h2>
+      <p><strong>Email:</strong> pavaniparla19@gmail.com</p>
+      <p><strong>Contact:</strong> 7013696323</p>
+      <p>B.Tech 2nd Year, Vignan</p>
+      <p>Branch: CSE - AI</p>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="team-card">
+      <img src="C:\Users\parla\OneDrive\Desktop\edubuddy\rakesh.jpg" alt="Member 2">
+      <h2>Rakesh Mudidana</h2>
+      <p><strong>Email:</strong>rakeshpavanmudidana@gmail.com</p>
+      <p><strong>Contact:</strong>9014262409</p>
+      <p>B.Tech 2nd Year, Vignan</p>
+      <p>Branch: CSE - AI</p>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="team-card">
+      <img src="C:\Users\parla\OneDrive\Desktop\edubuddy\sai.jpg" alt="Member 3">
+      <h2></h2>
+      <p><strong>Email:</strong> member3@example.com</p>
+      <p><strong>Contact:</strong> 1122334455</p>
+      <p>B.Tech 2nd Year, Vignan</p>
+      <p>Branch: CSE - AI</p>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="team-card">
+      <img src="C:\Users\parla\OneDrive\Desktop\edubuddy\maheeth.jpg" alt="Member 4">
+      <h2>Maheeth</h2>
+      <p><strong>Email:</strong> member4@example.com</p>
+      <p><strong>Contact:</strong> 9988776655</p>
+      <p>B.Tech 2nd Year, Vignan</p>
+      <p>Branch: CSE - AI</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>EduBuddy</strong> – Making Learning Smarter Together 🎓</p>
+    <p>Team: Pavani, Member 2, Member 3, Member 4</p>
+    <p>Contact: edubuddy.team@example.com</p>
+    <p>&copy; 2025 EduBuddy | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for Animation -->
+  <script>
+    const cards = document.querySelectorAll(".team-card");
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2,
+    });
+
+    cards.forEach(card => {
+      appearOnScroll.observe(card);
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

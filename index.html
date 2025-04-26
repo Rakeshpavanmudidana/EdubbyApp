@@ -310,9 +310,9 @@
 
       if (currentScrollY > lastScrollY && rect.top < window.innerHeight - 150) {
         features.classList.add("visible");
-      } else if (currentScrollY < lastScrollY) {
+      } /*else if (currentScrollY < lastScrollY) {
         features.classList.remove("visible");
-      }
+      }*/
 
       lastScrollY = currentScrollY;
     });
@@ -325,9 +325,9 @@
 
       if (currentScrollY2 > lastScrollY2 && rect2.top < window.innerHeight - 150) {
         work.classList.add("visible");
-      } else if (currentScrollY2 < lastScrollY2) {
+      } /*else if (currentScrollY2 < lastScrollY2) {
         work.classList.remove("visible");
-      }
+      }*/
 
       lastScrollY2 = currentScrollY2;
     });
